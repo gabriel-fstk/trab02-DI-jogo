@@ -44,10 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
 
         obstacleInterval = setInterval(() => {
-            if (Math.random() < 0.15) {
                 createObstacle();
-            }
-        }, 1000);
+        }, 800);
     }
 
     function endGame() {
@@ -85,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isJumping) return;
         isJumping = true;
         jumpSound.play();
-        let jumpHeight = 100;
+        let jumpHeight = 120;
         let jumpDuration = 350;
         player.style.transition = `bottom ${jumpDuration / 700}s`;
         player.style.bottom = `${jumpHeight}px`;
