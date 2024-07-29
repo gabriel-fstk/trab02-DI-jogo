@@ -85,8 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isJumping) return;
         isJumping = true;
         jumpSound.play();
-        let jumpHeight = 150;
-        let jumpDuration = 500;
+        let jumpHeight = 100;
+        let jumpDuration = 350;
         player.style.transition = `bottom ${jumpDuration / 700}s`;
         player.style.bottom = `${jumpHeight}px`;
         setTimeout(() => {
