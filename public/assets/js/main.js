@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
 
         obstacleInterval = setInterval(() => {
+            if(Math.random() < 0.2)
                 createObstacle();
         }, 800);
     }
