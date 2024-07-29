@@ -1,0 +1,8 @@
+@keyframes obstacle-animation {
+    0% {
+        right: -20px;
+    }
+    100% {
+        right: 100%;
+    }
+}

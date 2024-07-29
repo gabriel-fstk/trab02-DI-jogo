@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Dinossauro</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link rel="stylesheet" href="public/assets/css/animation.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="player"></div>
+        <div id="obstacles"></div>
+        <div id="score-board">
+            <p>Pontuação: <span id="score">0</span></p>
+            <p>Recorde: <span id="high-score">0</span></p>
+        </div>
+    </div>
+    <div id="controls">
+        <button id="start-btn">Iniciar</button>
+        <button id="restart-btn" style="display:none;">Reiniciar</button>
+    </div>
+    <div id="game-over" style="display:none;">
+        <p>Game Over</p>
+        <p>Sua Pontuação: <span id="final-score">0</span></p>
+        <p>Recorde: <span id="final-high-score">0</span></p>
+    </div>
+    <script src="public/assets/js/main.js"></script>
+    <script src="public/assets/js/updateRecord.js"></script>
+</body>
+</html>
